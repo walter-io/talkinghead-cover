@@ -1,0 +1,14 @@
+﻿{
+  "base": "C:/Users/we/agnes-output/wb-cover-base-clean-1789554359477.png",
+  "out": "C:/Users/we/agnes-output/cover.png",
+  "title": { "line1": "WorkBuddy", "line2": "自动签到" },
+  "labels": [
+    { "text": "自动签到",   "fx": 0.215, "fy": 0.505, "size": 112 },
+    { "text": "多账号管理", "fx": 0.792, "fy": 0.548, "size": 102 },
+    { "text": "积分管理",   "fx": 0.215, "fy": 0.660, "size": 112 },
+    { "text": "token统计",  "fx": 0.792, "fy": 0.700, "size": 102 }
+  ],
+  "title_top": 0.032,
+  "title_line_gap": 115,
+  "title_angle": 6
+}
