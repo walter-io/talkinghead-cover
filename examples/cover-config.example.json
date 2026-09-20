@@ -1,14 +1,20 @@
 ﻿{
-  "base": "C:/Users/we/agnes-output/wb-cover-base-clean-1789554359477.png",
+  "base": "C:/Users/we/agnes-output/wb-cover-tech-base2.png",
   "out": "C:/Users/we/agnes-output/cover.png",
-  "title": { "line1": "WorkBuddy", "line2": "自动签到" },
-  "labels": [
-    { "text": "自动签到",   "fx": 0.215, "fy": 0.505, "size": 112 },
-    { "text": "多账号管理", "fx": 0.792, "fy": 0.548, "size": 102 },
-    { "text": "积分管理",   "fx": 0.215, "fy": 0.660, "size": 112 },
-    { "text": "token统计",  "fx": 0.792, "fy": 0.700, "size": 102 }
-  ],
-  "title_top": 0.032,
-  "title_line_gap": 115,
-  "title_angle": 6
+  "cn_font": "yahei",
+  "title": {
+    "lines": [
+      { "text": "我们这代的{鸡蛋}", "size": 215, "ow": 16 },
+      { "text": "{免费}的token",   "size": 215, "ow": 16 }
+    ]
+  },
+  "labels": [],
+  "title_top": 0.055,
+  "title_max_bottom": 0.295,
+  "title_line_gap": 18,
+  "title_angle": 6,
+  "title_emph_ratio": 1.28,
+  "title_emph_color": "FFD400",
+  "title_safe_margin": 0.028,
+  "decor": { "enable": false }
 }

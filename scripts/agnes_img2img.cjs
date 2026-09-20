@@ -10,10 +10,13 @@
  *     "image":  "C:/path/to/character.png",   // 可选；给了就是图生图，不给就是文生图
  *     "prompt": "……",                          // 必填
  *     "out":    "C:/path/to/base.png",         // 必填，输出图片路径
- *     "model":  "agnes-image-2.1-flash",       // 可选，默认 agnes-image-2.1-flash
+ *     "model":  "agnes-image-2.5-flash",       // 可选，默认 agnes-image-2.5-flash
  *     "size":   "2K",                          // 可选，默认 2K
  *     "ratio":  "9:16"                         // 可选，默认 9:16
  *   }
+ *
+ * 说明: 本脚本是「Agnes图像生成」技能的等价封装（配置驱动）。
+ *       按 SKILL.md 要求，底图环节必须走 Agnes——二者择一即可，不要用 PIL 硬拼底图。
  *
  * key 读取顺序: 环境变量 AGNES_API_KEY ->  C:\Users\<user>\.agnes_key
  */
@@ -55,7 +58,7 @@ async function main() {
     method: 'POST',
     headers: { 'Authorization': 'Bearer ' + API_KEY, 'Content-Type': 'application/json' },
     body: JSON.stringify({
-      model: cfg.model || 'agnes-image-2.1-flash',
+      model: cfg.model || 'agnes-image-2.5-flash',
       prompt: cfg.prompt,
       size: cfg.size || '2K',
       ratio: cfg.ratio || '9:16',
